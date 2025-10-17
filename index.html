@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <article data-testid="test-profile-card" class="profile-card">
+    <header>
+      <h2 data-testid="test-user-name">Anthony Samson</h2>
+    </header>
+
+    <figure class="avatar">
+      <img
+        src="./assets/samson.jpeg"
+        alt="Profile-avater"
+        data-testid="test-user-avatar"
+      />
+    </figure>
+
+    <p data-testid="test-user-bio">
+      Frontend developer and designer passionate about creating clean, accessible user interfaces.
+    </p>
+
+    <nav data-testid="test-user-social-links" class="social-links">
+      <ul>
+        <li><a href="https://x.com/anth_samson" target="_blank" data-testid="test-user-social-twitter">Twitter</a></li>
+        <li><a href="https://github.com/Samson063" target="_blank" data-testid="test-user-social-github">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/anthony-samsonnnn/" target="_blank" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+    <section data-testid="test-user-hobbies">
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Designing</li>
+        <li>Listening to music</li>
+        <li>Sleeping</li>
+      </ul>
+    </section>
+
+    <section data-testid="test-user-dislikes">
+      <h3>Dislikes</h3>
+      <ul>
+        <li>Procrastination</li>
+        <li>Noise</li>
+        <li>Bama</li>
+      </ul>
+    </section>
+
+     <p class="time">
+      Current Time (ms): 
+      <span data-testid="test-user-time" id="time"></span>
+    </p>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
